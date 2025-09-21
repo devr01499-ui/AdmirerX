@@ -1,0 +1,59 @@
+/* REMOVE ALL animations/transitions/hovers from contact form */
+#contact-form * {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+#contact-form input:hover,
+#contact-form textarea:hover,
+#contact-form button:hover,
+#contact-form select:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background: inherit !important;
+    border-color: inherit !important;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus,
+#contact-form select:focus {
+    outline: 1px solid #ccc !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+#contact-form button:active {
+    transform: none !important;
+}
+
+/* Disable all MUI animations */
+.MuiOutlinedInput-root {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+.MuiOutlinedInput-root:hover,
+.MuiOutlinedInput-root.Mui-focused {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.MuiButton-root {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+.MuiButton-root:hover,
+.MuiButton-root:active {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Disable keyframes */
+@keyframes none {
+    0% { opacity: 1; }
+    100% { opacity: 1; }
+}
