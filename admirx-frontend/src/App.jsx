@@ -23,7 +23,15 @@ function App() {
         <CssBaseline />
         <Router>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={
+              <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+                <Navbar />
+                <Box component="main" sx={{ flexGrow: 1 }}>
+                  <HomePage />
+                </Box>
+                <Footer />
+              </Box>
+            } />
             <Route path="/about" element={
               <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
                 <Navbar />

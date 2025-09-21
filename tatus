@@ -1,0 +1,128 @@
+[33mcommit 55698d650b7c5cbb19321a54eba3625f92ef328e[m
+Author: devr01499-ui <devr01499@gmail.com>
+Date:   Sun Sep 21 17:13:30 2025 +0530
+
+    Final pre-deployment audit: fixed all bugs, tested email, updated configs
+    
+    - Fixed backend package.json main field
+    - Created .env file with proper email configuration
+    - Fixed CORS configuration for production
+    - Updated navigation menu to comply with requirements
+    - Added contact form integration to all buttons
+    - Updated API URLs for production
+    - Fixed vercel.json configuration
+    - Tested email functionality successfully
+    - All builds passing without errors
+    - Added comprehensive .gitignore files
+
+.gitignore
+App.jsx
+DEPLOYMENT.md
+README.md
+admirx-backend/.gitignore
+admirx-backend/models/Contact.js
+admirx-backend/package-lock.json
+admirx-backend/package.json
+admirx-backend/routes/contact.js
+admirx-backend/routes/services.js
+admirx-backend/routes/team.js
+admirx-backend/server.js
+admirx-backend/utils/email.js
+admirx-frontend/.gitignore
+admirx-frontend/README.md
+admirx-frontend/eslint.config.js
+admirx-frontend/index.html
+admirx-frontend/package-lock.json
+admirx-frontend/package.json
+admirx-frontend/public/vite.svg
+admirx-frontend/src/App.css
+admirx-frontend/src/App.jsx
+admirx-frontend/src/assets/react.svg
+admirx-frontend/src/components/ContactForm.jsx
+admirx-frontend/src/components/Footer.jsx
+admirx-frontend/src/components/Navbar.jsx
+admirx-frontend/src/index.css
+admirx-frontend/src/main.jsx
+admirx-frontend/src/pages/AboutUs.jsx
+admirx-frontend/src/pages/Career.jsx
+admirx-frontend/src/pages/Contact.jsx
+admirx-frontend/src/pages/Home.jsx
+admirx-frontend/src/pages/HomePage.jsx
+admirx-frontend/src/pages/PartnerWithUs.jsx
+admirx-frontend/src/pages/Services.jsx
+admirx-frontend/src/store/slices/contactSlice.js
+admirx-frontend/src/store/store.js
+admirx-frontend/src/theme/theme.js
+admirx-frontend/vercel.json
+admirx-frontend/vite.config.js
+assets/logo.svg
+client/.gitignore
+client/README.md
+client/eslint.config.js
+client/index.html
+client/package-lock.json
+client/package.json
+client/public/vite.svg
+client/src/App.css
+client/src/App.jsx
+client/src/assets/react.svg
+client/src/components/ContactForm.jsx
+client/src/components/Footer.jsx
+client/src/components/Navbar.jsx
+client/src/index.css
+client/src/main.jsx
+client/src/pages/AboutUs.jsx
+client/src/pages/Career.jsx
+client/src/pages/Contact.jsx
+client/src/pages/Home.jsx
+client/src/pages/HomePage.jsx
+client/src/pages/PartnerWithUs.jsx
+client/src/pages/Services.jsx
+client/src/store/slices/contactSlice.js
+client/src/store/store.js
+client/src/theme/theme.js
+client/vercel.json
+client/vite.config.js
+components/ExamplePage.jsx
+components/Footer.jsx
+components/Header.jsx
+components/README.md
+ff/README.md
+ff/backend/README.md
+ff/backend/package-lock.json
+ff/backend/package.json
+ff/backend/server.js
+ff/install-backend.js
+ff/package-lock.json
+ff/package.json
+ff/public/assets/logo.svg
+ff/public/favicon.ico
+ff/public/index.html
+ff/src/App.jsx
+ff/src/components/Footer.jsx
+ff/src/components/Header.jsx
+ff/src/components/ScrollToTop.jsx
+ff/src/index.js
+ff/src/pages/AboutUs.jsx
+ff/src/pages/Career.jsx
+ff/src/pages/Contact.jsx
+ff/src/pages/Home.jsx
+ff/src/pages/PartnerWithUs.jsx
+ff/src/pages/Services.jsx
+ff/src/static-form.css
+ff/src/theme.js
+ff/start-servers.js
+package-lock.json
+package.json
+pages/Career.jsx
+pages/Contact.jsx
+pages/PartnerWithUs.jsx
+pages/README.md
+server/models/Contact.js
+server/package-lock.json
+server/package.json
+server/routes/contact.js
+server/routes/services.js
+server/routes/team.js
+server/server.js
+server/utils/email.js

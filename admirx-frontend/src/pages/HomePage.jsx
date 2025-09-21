@@ -100,28 +100,6 @@ const HomePage = () => {
 
   return (
     <Box>
-      {/* App Bar */}
-      <AppBar 
-        position="static" 
-        sx={{ 
-          backgroundColor: '#ffffff',
-          boxShadow: 'none',
-          borderBottom: '1px solid #e0e0e0'
-        }}
-      >
-        <Toolbar sx={{ justifyContent: 'center' }}>
-          <Typography 
-            variant="h6" 
-            sx={{ 
-              color: '#1565c0', 
-              fontWeight: 700,
-              fontSize: '24px'
-            }}
-          >
-            ADMREEX
-          </Typography>
-        </Toolbar>
-      </AppBar>
 
       {/* Hero Section */}
       <HeroSection sx={{ py: { xs: 8, md: 12 } }}>
@@ -400,87 +378,6 @@ const HomePage = () => {
         </Container>
       </Box>
 
-      {/* Footer */}
-      <Box sx={{ backgroundColor: '#0d47a1', color: 'white', py: 6 }}>
-        <Container maxWidth="lg">
-          <Grid container spacing={4}>
-            <Grid item xs={12} md={3}>
-              <Typography 
-                variant="h5" 
-                sx={{ 
-                  fontWeight: 700, 
-                  mb: 2,
-                  fontSize: '24px'
-                }}
-              >
-                Admirex
-              </Typography>
-            </Grid>
-            <Grid item xs={12} md={3}>
-              <Typography 
-                variant="h6" 
-                sx={{ 
-                  fontWeight: 600, 
-                  mb: 2,
-                  fontSize: '16px'
-                }}
-              >
-                Services
-              </Typography>
-              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-                {['Customer Support', 'Data Processing', 'Lead Generation', 'Tech Support', 'HR Consultancy'].map((item, index) => (
-                  <Typography key={index} variant="body2" sx={{ fontSize: '14px' }}>
-                    {item}
-                  </Typography>
-                ))}
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={3}>
-              <Typography 
-                variant="h6" 
-                sx={{ 
-                  fontWeight: 600, 
-                  mb: 2,
-                  fontSize: '16px'
-                }}
-              >
-                Connect
-              </Typography>
-              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-                {['LinkedIn', 'Facebook', 'Instagram', 'Twitter'].map((item, index) => (
-                  <Typography key={index} variant="body2" sx={{ fontSize: '14px' }}>
-                    {item}
-                  </Typography>
-                ))}
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={3}>
-              <Typography 
-                variant="h6" 
-                sx={{ 
-                  fontWeight: 600, 
-                  mb: 2,
-                  fontSize: '16px'
-                }}
-              >
-                Policies
-              </Typography>
-              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-                {['Workload Management', 'Quality Assurance', 'Transparent Policy', 'Long Partnership'].map((item, index) => (
-                  <Typography key={index} variant="body2" sx={{ fontSize: '14px' }}>
-                    {item}
-                  </Typography>
-                ))}
-              </Box>
-            </Grid>
-          </Grid>
-          <Box sx={{ textAlign: 'center', mt: 4, pt: 3, borderTop: '1px solid rgba(255,255,255,0.2)' }}>
-            <Typography variant="body2" sx={{ fontSize: '14px' }}>
-              © 2024 Admirex. All rights reserved.
-            </Typography>
-          </Box>
-        </Container>
-      </Box>
 
       {/* Contact Form Modal */}
       <ContactForm 
